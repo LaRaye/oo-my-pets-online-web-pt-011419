@@ -56,9 +56,13 @@ class Owner
   end 
   
   def sell_pets
-    @pets.each {|pet_type, pet|
-      pet
-      pet.mood = "nervous"
+    @pets.each {|pet_type, pets_list|
+      pets_list.each |pet, attributes|
+        if attribute == @mood
+          pet.mood = "nervous"
+        end 
+      end 
+    end 
     }
   end 
 end

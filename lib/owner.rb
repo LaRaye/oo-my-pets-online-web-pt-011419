@@ -56,12 +56,10 @@ class Owner
   end 
   
   def sell_pets
-    @pets.each  do |pet_type, pets_list|
-      pets_list.each |pet, attributes|
-        if attribute == @mood
-          @mood = "nervous"
-          binding.pry
-        end 
+    @pets.each  do |pet_key, pets_arr|
+      pets_arr.each |pet|
+        pet.mood = "nervous"
+        binding.pry
       end
     end 
   end 

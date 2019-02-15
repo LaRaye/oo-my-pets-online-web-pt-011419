@@ -63,6 +63,6 @@ class Owner
   end 
   
   def list_pets
-    
+    @pets.each {|pet_key, pets_arr| pet_key.values.count  
   
 end

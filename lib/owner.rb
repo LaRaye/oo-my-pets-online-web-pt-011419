@@ -60,6 +60,7 @@ class Owner
       pets_list.each |pet, attributes|
         if attribute == @mood
           pet.mood = "nervous"
+          binding.pry
         end 
       end 
     end 
